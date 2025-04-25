@@ -38,3 +38,34 @@
 .userFlash {
   background-color: aquamarine;
 }
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px; 
+  max-width: 400px;
+  margin: auto;
+}
+.line-1, .line-2 {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  width: 20vw; 
+  height: 20vw; 
+  max-width: 120px;
+  max-height: 120px;
+}
+@media (max-width: 768px) { /* Tablet */
+  .btn {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+@media (max-width: 480px) { /* Mobile */
+  .btn {
+    width: 40vw;
+    height: 40vw;
+  }
+}
